@@ -8,18 +8,35 @@
   --secondary-color: #aa9581;
   --highlight-color: #41babe;
   --light-highlight-color: #7a9fc2;
-}
-/* Reset CSS */
-
-.col-12 {
-  color: white !important;
-  background-color: #41babe;
-  border: 1px solid #fff;
+  --background-color: blue;
+  --nav-color: darkgray;
+  --text-color: white;
 }
 
-/* footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-} */
+/* nav bar */
+
+#navbar {
+  background-color: var(--nav-color);
+  font-family: var(--primary-font);
+}
+
+#navbar a {
+  color: var(--text-color);
+}
+
+.navbar .logo {
+  width: 30px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+footer {
+  background-color: var(--background-color);
+  color: white;
+  font-family: var(--primary-font);
+}
