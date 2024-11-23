@@ -45,10 +45,10 @@ h2,
 h3 {
   font-family: var(--secondary-font);
   color: var(--primary-color);
-  text-transform: uppercase;
 }
 
-h3 {
+h1,
+h2 {
   text-transform: capitalize;
 }
 
@@ -58,6 +58,10 @@ h3 {
 
 #header .lead {
   font-family: var(--secondary-font);
+}
+
+.card-footer {
+  background-color: transparent;
 }
 
 .card-footer p {
@@ -74,6 +78,6 @@ footer {
 
 @media (min-width: 768px) {
   .card {
-    min-height: 72vh;
+    min-height: 65vh;
   }
 }
