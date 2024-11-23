@@ -35,12 +35,21 @@
   width: 30px;
 }
 
+.card {
+  min-height: 59vh;
+  margin-bottom: 10px;
+}
+
 h1,
 h2,
 h3 {
   font-family: var(--secondary-font);
   color: var(--primary-color);
   text-transform: uppercase;
+}
+
+h3 {
+  text-transform: capitalize;
 }
 
 .sub-heading-color {
@@ -51,8 +60,20 @@ h3 {
   font-family: var(--secondary-font);
 }
 
+.card-footer p {
+  font-weight: bolder;
+}
+
 footer {
   background-color: var(--background-color);
   color: white;
   font-family: var(--primary-font);
+}
+
+/* media queries */
+
+@media (min-width: 768px) {
+  .card {
+    min-height: 72vh;
+  }
 }
